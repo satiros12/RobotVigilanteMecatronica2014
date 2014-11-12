@@ -1,4 +1,5 @@
 import java.util.*;
+//Modifico para master
 public class Lista {
 	public List<Persona> L;
 	public ListIterator<Persona> LI;
