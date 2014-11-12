@@ -1,4 +1,5 @@
 import java.util.*;
+//Hola esto es para hacer merge global.
 public class Lista {
 	public List<Persona> L;
 	public ListIterator<Persona> LI;
