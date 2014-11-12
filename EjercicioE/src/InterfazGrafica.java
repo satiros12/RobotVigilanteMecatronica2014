@@ -16,7 +16,7 @@ public class InterfazGrafica {
 	Panel p8=new Panel(new GridLayout(1,2));
 	Panel p9=new Panel(new GridLayout(1,3));
 	Panel p10=new Panel(new GridLayout(3,1));
-	Button b=new Button("Añadir");
+	Button b=new Button("Aï¿½adir");
 	Button b2=new Button("Eliminar");
 	Button b3=new Button(">>Buscar");
 	Button b4=new Button("Salir");
@@ -31,9 +31,9 @@ public class InterfazGrafica {
 	Label l9=new Label("--------------------------------------------------------------------------------------------------");
 	Label l10=new Label("");
 	Label l11=new Label("");
-	Label l12=new Label("Creado por: Christian Ayuso Thomas",Label.CENTER);
+	Label l12=new Label("Creado por: Christian Ayuso Thomas y Stanislav Vakaruk",Label.CENTER);
 	Label l13=new Label("Version 1.0",Label.CENTER);
-	Label l14=new Label("Agradecimientos: Juan Bermúdez y Rubén Cerrillo",Label.CENTER);
+	Label l14=new Label("Agradecimientos: Juan Bermï¿½dez y Rubï¿½n Cerrillo",Label.CENTER);
 	Color c =new Color(30,117,175);
 	TextField t=new TextField(20);
 	TextField t2=new TextField(20);
