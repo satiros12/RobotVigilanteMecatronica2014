@@ -31,7 +31,7 @@ public class InterfazGrafica {
 	Label l9=new Label("--------------------------------------------------------------------------------------------------");
 	Label l10=new Label("");
 	Label l11=new Label("");
-	Label l12=new Label("Creado por: Christian Ayuso Thomas y Stanislav Vakaruk",Label.CENTER);
+	Label l12=new Label("Creado por: Solo Stanislav Vakaruk",Label.CENTER);
 	Label l13=new Label("Version 1.0",Label.CENTER);
 	Label l14=new Label("Agradecimientos: Juan Berm�dez y Rub�n Cerrillo",Label.CENTER);
 	Color c =new Color(30,117,175);
