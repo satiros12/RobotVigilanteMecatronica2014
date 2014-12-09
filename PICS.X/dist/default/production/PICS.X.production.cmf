@@ -1,0 +1,477 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$/tmp/cgtI3Nz6v.obj
+end_init CODE 0 12 12 3 2
+reset_vec CODE 0 0 0 3 2
+config CONFIG 0 2007 2007 2 2
+$dist/default/production/PICS.X.production.obj
+cinit CODE 0 15 15 14 2
+intentry CODE 0 4 4 E 2
+text7 CODE 0 203 203 3A 2
+text6 CODE 0 29 29 CE 2
+text5 CODE 0 27A 27A 8 2
+text4 CODE 0 25E 25E 14 2
+text3 CODE 0 23D 23D 21 2
+text2 CODE 0 166 166 53 2
+text1 CODE 0 1B9 1B9 4A 2
+maintext CODE 0 F7 F7 6F 2
+cstackBANK0 BANK0 1 31 31 5 1
+cstackCOMMON COMMON 1 70 70 B 1
+clrtext CODE 0 272 272 8 2
+bssBANK1 BANK1 1 A0 A0 40 1
+bssBANK0 BANK0 1 20 20 11 1
+bssCOMMON COMMON 1 7D 7D 1 1
+nvBANK0 BANK0 1 36 36 2 1
+nvCOMMON COMMON 1 7B 7B 2 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+BANK0 0038-006F 1
+BANK1 00E0-00EF 1
+BANK2 0110-016F 1
+BANK3 0190-01EF 1
+CODE 0003-0003 2
+CODE 0282-1FFF 2
+CONST 0003-0003 2
+CONST 0282-1FFF 2
+EEDATA 2100-21FF 2
+ENTRY 0003-0003 2
+ENTRY 0282-1FFF 2
+IDLOC 2000-2003 2
+RAM 0038-006F 1
+RAM 00E0-00EF 1
+RAM 0110-016F 1
+RAM 0190-01EF 1
+SFR0 0000-001F 1
+SFR1 0080-009F 1
+SFR2 0100-010F 1
+SFR3 0180-018F 1
+STACK 0110-016F 1
+STRCODE 0003-0003 2
+STRCODE 0282-1FFF 2
+STRING 0003-0003 2
+STRING 0282-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <file name>:<line number> <address> <psect name> <class name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production/PICS.X.production.obj
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":121 4 intentry CODE
+"/tmp/cgt6G5Ws0":618 15 cinit CODE
+"/tmp/cgt6G5Ws0":621 15 cinit CODE
+"/tmp/cgt6G5Ws0":679 15 cinit CODE
+"/tmp/cgt6G5Ws0":682 16 cinit CODE
+"/tmp/cgt6G5Ws0":683 17 cinit CODE
+"/tmp/cgt6G5Ws0":684 18 cinit CODE
+"/tmp/cgt6G5Ws0":685 19 cinit CODE
+"/tmp/cgt6G5Ws0":686 1A cinit CODE
+"/tmp/cgt6G5Ws0":689 1F cinit CODE
+"/tmp/cgt6G5Ws0":690 20 cinit CODE
+"/tmp/cgt6G5Ws0":691 21 cinit CODE
+"/tmp/cgt6G5Ws0":692 22 cinit CODE
+"/tmp/cgt6G5Ws0":698 25 cinit CODE
+"/tmp/cgt6G5Ws0":699 25 cinit CODE
+"/tmp/cgt6G5Ws0":700 26 cinit CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":121 29 text6 CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":124 29 text6 CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":127 2B text6 CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":130 2F text6 CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":131 3D text6 CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":132 42 text6 CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":142 45 text6 CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":144 47 text6 CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":145 4B text6 CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":148 4D text6 CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":151 4F text6 CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":153 51 text6 CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":154 57 text6 CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":155 59 text6 CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":157 7E text6 CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":159 9B text6 CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":161 9C text6 CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":162 A2 text6 CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":163 A4 text6 CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":165 C9 text6 CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":172 E9 text6 CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":174 EC text6 CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":47 F7 maintext CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":48 F7 maintext CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":51 FC maintext CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":53 101 maintext CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":56 111 maintext CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":57 119 maintext CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":58 122 maintext CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":60 128 maintext CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":63 138 maintext CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":64 140 maintext CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":65 143 maintext CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":66 146 maintext CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":67 14C maintext CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":69 14F maintext CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":70 159 maintext CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":49 165 maintext CODE
+"/home/stan/MPLABXProjects/PICS.X/usart_pic16.c":31 166 text2 CODE
+"/home/stan/MPLABXProjects/PICS.X/usart_pic16.c":34 166 text2 CODE
+"/home/stan/MPLABXProjects/PICS.X/usart_pic16.c":35 16D text2 CODE
+"/home/stan/MPLABXProjects/PICS.X/usart_pic16.c":36 170 text2 CODE
+"/home/stan/MPLABXProjects/PICS.X/usart_pic16.c":37 173 text2 CODE
+"/home/stan/MPLABXProjects/PICS.X/usart_pic16.c":42 176 text2 CODE
+"/home/stan/MPLABXProjects/PICS.X/usart_pic16.c":45 177 text2 CODE
+"/home/stan/MPLABXProjects/PICS.X/usart_pic16.c":48 179 text2 CODE
+"/home/stan/MPLABXProjects/PICS.X/usart_pic16.c":51 17B text2 CODE
+"/home/stan/MPLABXProjects/PICS.X/usart_pic16.c":54 17D text2 CODE
+"/home/stan/MPLABXProjects/PICS.X/usart_pic16.c":56 181 text2 CODE
+"/home/stan/MPLABXProjects/PICS.X/usart_pic16.c":42 182 text2 CODE
+"/home/stan/MPLABXProjects/PICS.X/usart_pic16.c":56 1A6 text2 CODE
+"/home/stan/MPLABXProjects/PICS.X/usart_pic16.c":58 1A6 text2 CODE
+"/home/stan/MPLABXProjects/PICS.X/usart_pic16.c":59 1A9 text2 CODE
+"/home/stan/MPLABXProjects/PICS.X/usart_pic16.c":60 1AA text2 CODE
+"/home/stan/MPLABXProjects/PICS.X/usart_pic16.c":61 1AB text2 CODE
+"/home/stan/MPLABXProjects/PICS.X/usart_pic16.c":62 1AC text2 CODE
+"/home/stan/MPLABXProjects/PICS.X/usart_pic16.c":65 1AD text2 CODE
+"/home/stan/MPLABXProjects/PICS.X/usart_pic16.c":66 1B0 text2 CODE
+"/home/stan/MPLABXProjects/PICS.X/usart_pic16.c":67 1B1 text2 CODE
+"/home/stan/MPLABXProjects/PICS.X/usart_pic16.c":68 1B2 text2 CODE
+"/home/stan/MPLABXProjects/PICS.X/usart_pic16.c":71 1B3 text2 CODE
+"/home/stan/MPLABXProjects/PICS.X/usart_pic16.c":72 1B6 text2 CODE
+"/home/stan/MPLABXProjects/PICS.X/usart_pic16.c":74 1B7 text2 CODE
+"/home/stan/MPLABXProjects/PICS.X/usart_pic16.c":75 1B8 text2 CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":78 1B9 text1 CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":79 1B9 text1 CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":88 1BD text1 CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":89 1C0 text1 CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":90 1C3 text1 CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":91 1C6 text1 CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":92 1C9 text1 CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":95 1CD text1 CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":96 1CF text1 CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":105 1D1 text1 CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":106 1D5 text1 CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":109 1D9 text1 CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":112 1E2 text1 CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":113 1E7 text1 CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":114 1F3 text1 CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":115 1FD text1 CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":117 200 text1 CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":118 201 text1 CODE
+"/home/stan/MPLABXProjects/PICS.X/MainPICs.c":119 202 text1 CODE
+"/home/stan/MPLABXProjects/PICS.X/SoftwareServo.c":19 203 text7 CODE
+"/home/stan/MPLABXProjects/PICS.X/SoftwareServo.c":23 203 text7 CODE
+"/home/stan/MPLABXProjects/PICS.X/SoftwareServo.c":26 204 text7 CODE
+"/home/stan/MPLABXProjects/PICS.X/SoftwareServo.c":27 209 text7 CODE
+"/home/stan/MPLABXProjects/PICS.X/SoftwareServo.c":29 211 text7 CODE
+"/home/stan/MPLABXProjects/PICS.X/SoftwareServo.c":30 216 text7 CODE
+"/home/stan/MPLABXProjects/PICS.X/SoftwareServo.c":31 21C text7 CODE
+"/home/stan/MPLABXProjects/PICS.X/SoftwareServo.c":32 222 text7 CODE
+"/home/stan/MPLABXProjects/PICS.X/SoftwareServo.c":33 226 text7 CODE
+"/home/stan/MPLABXProjects/PICS.X/SoftwareServo.c":35 22C text7 CODE
+"/home/stan/MPLABXProjects/PICS.X/SoftwareServo.c":29 230 text7 CODE
+"/home/stan/MPLABXProjects/PICS.X/SoftwareServo.c":37 238 text7 CODE
+"/home/stan/MPLABXProjects/PICS.X/SoftwareServo.c":97 23C text7 CODE
+"/home/stan/MPLABXProjects/PICS.X/SoftwareServo.c":5 23D text3 CODE
+"/home/stan/MPLABXProjects/PICS.X/SoftwareServo.c":6 23D text3 CODE
+"/home/stan/MPLABXProjects/PICS.X/SoftwareServo.c":7 241 text3 CODE
+"/home/stan/MPLABXProjects/PICS.X/SoftwareServo.c":8 242 text3 CODE
+"/home/stan/MPLABXProjects/PICS.X/SoftwareServo.c":11 243 text3 CODE
+"/home/stan/MPLABXProjects/PICS.X/SoftwareServo.c":12 250 text3 CODE
+"/home/stan/MPLABXProjects/PICS.X/SoftwareServo.c":11 257 text3 CODE
+"/home/stan/MPLABXProjects/PICS.X/SoftwareServo.c":99 25E text4 CODE
+"/home/stan/MPLABXProjects/PICS.X/SoftwareServo.c":100 261 text4 CODE
+"/home/stan/MPLABXProjects/PICS.X/SoftwareServo.c":101 269 text4 CODE
+"/home/stan/MPLABXProjects/PICS.X/SoftwareServo.c":102 271 text4 CODE
+"/tmp/cgt6G5Ws0":666 272 clrtext CODE
+"/tmp/cgt6G5Ws0":667 272 clrtext CODE
+"/tmp/cgt6G5Ws0":668 273 clrtext CODE
+"/tmp/cgt6G5Ws0":669 273 clrtext CODE
+"/tmp/cgt6G5Ws0":670 274 clrtext CODE
+"/tmp/cgt6G5Ws0":671 275 clrtext CODE
+"/tmp/cgt6G5Ws0":672 276 clrtext CODE
+"/tmp/cgt6G5Ws0":673 277 clrtext CODE
+"/tmp/cgt6G5Ws0":674 278 clrtext CODE
+"/tmp/cgt6G5Ws0":675 279 clrtext CODE
+"/home/stan/MPLABXProjects/PICS.X/usart_pic16.c":77 27A text5 CODE
+"/home/stan/MPLABXProjects/PICS.X/usart_pic16.c":79 27D text5 CODE
+"/home/stan/MPLABXProjects/PICS.X/usart_pic16.c":81 27F text5 CODE
+"/home/stan/MPLABXProjects/PICS.X/usart_pic16.c":82 281 text5 CODE
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__CFG_WRT$OFF 0 0 ABS 0 - dist/default/production/PICS.X.production.obj
+_RB1 31 0 ABS 0 - dist/default/production/PICS.X.production.obj
+__S0 2009 0 ABS 0 - -
+__S1 E0 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_GIE 5F 0 ABS 0 - dist/default/production/PICS.X.production.obj
+__Hintentry 24 0 CODE 0 intentry -
+__Lintentry 8 0 CODE 0 intentry -
+__pintentry 8 0 CODE 0 intentry dist/default/production/PICS.X.production.obj
+__size_of_Servo_setupSoftware 0 0 ABS 0 - dist/default/production/PICS.X.production.obj
+__CFG_PWRTE$ON 0 0 ABS 0 - dist/default/production/PICS.X.production.obj
+_TMR1 E 0 ABS 0 - dist/default/production/PICS.X.production.obj
+_RCIE 465 0 ABS 0 - dist/default/production/PICS.X.production.obj
+_PEIE 5E 0 ABS 0 - dist/default/production/PICS.X.production.obj
+_RCIF 65 0 ABS 0 - dist/default/production/PICS.X.production.obj
+_PORT_SERVOS 7D 0 COMMON 1 bssCOMMON dist/default/production/PICS.X.production.obj
+_BRGH 4C2 0 ABS 0 - dist/default/production/PICS.X.production.obj
+_main 1EE 0 CODE 0 maintext dist/default/production/PICS.X.production.obj
+___sp 0 0 STACK 2 stack /tmp/cgtI3Nz6v.obj
+btemp 7E 0 ABS 0 - dist/default/production/PICS.X.production.obj
+ltemp 7E 0 ABS 0 - dist/default/production/PICS.X.production.obj
+ttemp 7E 0 ABS 0 - dist/default/production/PICS.X.production.obj
+wtemp 7E 0 ABS 0 - dist/default/production/PICS.X.production.obj
+start 24 0 CODE 0 init /tmp/cgtI3Nz6v.obj
+_BRG16 C3B 0 ABS 0 - dist/default/production/PICS.X.production.obj
+_puerto_b 30 0 BANK0 1 bssBANK0 dist/default/production/PICS.X.production.obj
+_RCREG 1A 0 ABS 0 - dist/default/production/PICS.X.production.obj
+_TRISA 85 0 ABS 0 - dist/default/production/PICS.X.production.obj
+_TRISB 86 0 ABS 0 - dist/default/production/PICS.X.production.obj
+_TXREG 19 0 ABS 0 - dist/default/production/PICS.X.production.obj
+_PORTA 5 0 ABS 0 - dist/default/production/PICS.X.production.obj
+reset_vec 0 0 CODE 0 reset_vec /tmp/cgtI3Nz6v.obj
+_PORTB 6 0 ABS 0 - dist/default/production/PICS.X.production.obj
+_SPBRG 99 0 ABS 0 - dist/default/production/PICS.X.production.obj
+_T1CON 10 0 ABS 0 - dist/default/production/PICS.X.production.obj
+ltemp0 7E 0 ABS 0 - dist/default/production/PICS.X.production.obj
+ttemp0 7E 0 ABS 0 - dist/default/production/PICS.X.production.obj
+wtemp0 7E 0 ABS 0 - dist/default/production/PICS.X.production.obj
+ltemp1 82 0 ABS 0 - dist/default/production/PICS.X.production.obj
+ttemp1 81 0 ABS 0 - dist/default/production/PICS.X.production.obj
+wtemp1 80 0 ABS 0 - dist/default/production/PICS.X.production.obj
+ltemp2 86 0 ABS 0 - dist/default/production/PICS.X.production.obj
+ttemp2 84 0 ABS 0 - dist/default/production/PICS.X.production.obj
+wtemp2 82 0 ABS 0 - dist/default/production/PICS.X.production.obj
+ltemp3 80 0 ABS 0 - dist/default/production/PICS.X.production.obj
+ttemp3 87 0 ABS 0 - dist/default/production/PICS.X.production.obj
+wtemp3 84 0 ABS 0 - dist/default/production/PICS.X.production.obj
+ttemp4 7F 0 ABS 0 - dist/default/production/PICS.X.production.obj
+wtemp4 86 0 ABS 0 - dist/default/production/PICS.X.production.obj
+wtemp5 88 0 ABS 0 - dist/default/production/PICS.X.production.obj
+wtemp6 7F 0 ABS 0 - dist/default/production/PICS.X.production.obj
+interrupt_function 8 0 CODE 0 intentry dist/default/production/PICS.X.production.obj
+__Hconfig 4012 0 CONFIG 0 config -
+__Lconfig 400E 0 CONFIG 0 config -
+Servo_setAngle@angle 31 0 BANK0 1 cstackBANK0 dist/default/production/PICS.X.production.obj
+_UQEnd 7B 0 COMMON 1 nvCOMMON dist/default/production/PICS.X.production.obj
+__end_of_Servo_setupSoftware 4BC 0 CODE 0 text3 dist/default/production/PICS.X.production.obj
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+__Hfunctab 0 0 CODE 0 functab -
+__Lfunctab 0 0 CODE 0 functab -
+__Hcommon 0 0 ABS 0 common -
+__Lcommon 0 0 ABS 0 common -
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+_PIR1bits C 0 ABS 0 - dist/default/production/PICS.X.production.obj
+_TMR1IE 460 0 ABS 0 - dist/default/production/PICS.X.production.obj
+___int_sp 0 0 STACK 2 stack /tmp/cgtI3Nz6v.obj
+_TMR1IF 60 0 ABS 0 - dist/default/production/PICS.X.production.obj
+_SPBRGH 9A 0 ABS 0 - dist/default/production/PICS.X.production.obj
+Servo_nextStep@current_angle 72 0 COMMON 1 cstackCOMMON dist/default/production/PICS.X.production.obj
+_OSCCON 8F 0 ABS 0 - dist/default/production/PICS.X.production.obj
+__Habs1 0 0 ABS 0 abs1 -
+__Labs1 0 0 ABS 0 abs1 -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+_USARTWriteChar 4F4 0 CODE 0 text5 dist/default/production/PICS.X.production.obj
+_SERVO_counterPrecision 2E 0 BANK0 1 bssBANK0 dist/default/production/PICS.X.production.obj
+USARTWriteChar@ch 31 0 BANK0 1 cstackBANK0 dist/default/production/PICS.X.production.obj
+_URBuff A0 0 BANK1 1 bssBANK1 dist/default/production/PICS.X.production.obj
+__Hcode 0 0 ABS 0 code -
+__Lcode 0 0 ABS 0 code -
+stackhi 0 0 ABS 0 - /tmp/cgtI3Nz6v.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__pcstackBANK0 31 0 BANK0 1 cstackBANK0 dist/default/production/PICS.X.production.obj
+stacklo 0 0 ABS 0 - /tmp/cgtI3Nz6v.obj
+saved_w 7E 0 ABS 0 - dist/default/production/PICS.X.production.obj
+__Hinit 24 0 CODE 0 init -
+__Linit 24 0 CODE 0 init -
+__end_of_main 2CC 0 CODE 0 maintext dist/default/production/PICS.X.production.obj
+__Htext 0 0 ABS 0 text -
+__Ltext 0 0 ABS 0 text -
+_USARTInit 2CC 0 CODE 0 text2 dist/default/production/PICS.X.production.obj
+end_of_initialization 4A 0 CODE 0 cinit dist/default/production/PICS.X.production.obj
+__HnvBANK0 0 0 ABS 0 nvBANK0 -
+__LnvBANK0 0 0 ABS 0 nvBANK0 -
+__pnvBANK0 36 0 BANK0 1 nvBANK0 dist/default/production/PICS.X.production.obj
+USARTWriteInt@F1612 20 0 BANK0 1 bssBANK0 dist/default/production/PICS.X.production.obj
+__end_of_Servo_setAngle 4E4 0 CODE 0 text4 dist/default/production/PICS.X.production.obj
+_Servo_nextStep 406 0 CODE 0 text7 dist/default/production/PICS.X.production.obj
+Servo_setupSoftware@i 31 0 BANK0 1 cstackBANK0 dist/default/production/PICS.X.production.obj
+_SERVO_us5_counter 2B 0 BANK0 1 bssBANK0 dist/default/production/PICS.X.production.obj
+__size_of_USARTInit 0 0 ABS 0 - dist/default/production/PICS.X.production.obj
+__HnvCOMMON 0 0 ABS 0 nvCOMMON -
+__LnvCOMMON 0 0 ABS 0 nvCOMMON -
+_RCSTAbits 18 0 ABS 0 - dist/default/production/PICS.X.production.obj
+__pnvCOMMON 7B 0 COMMON 1 nvCOMMON dist/default/production/PICS.X.production.obj
+_TXSTAbits 98 0 ABS 0 - dist/default/production/PICS.X.production.obj
+__Hstrings 0 0 ABS 0 strings -
+__Lstrings 0 0 ABS 0 strings -
+_count_timer 25 0 BANK0 1 bssBANK0 dist/default/production/PICS.X.production.obj
+__Hbank0 0 0 ABS 0 bank0 -
+__Lbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Lbank3 0 0 ABS 0 bank3 -
+___latbits 2 0 ABS 0 - dist/default/production/PICS.X.production.obj
+__Hpowerup 0 0 CODE 0 powerup -
+__Lpowerup 0 0 CODE 0 powerup -
+_interrumptions 52 0 CODE 0 text6 dist/default/production/PICS.X.production.obj
+__ptext1 372 0 CODE 0 text1 dist/default/production/PICS.X.production.obj
+__ptext2 2CC 0 CODE 0 text2 dist/default/production/PICS.X.production.obj
+__ptext3 47A 0 CODE 0 text3 dist/default/production/PICS.X.production.obj
+__ptext4 4BC 0 CODE 0 text4 dist/default/production/PICS.X.production.obj
+__ptext5 4F4 0 CODE 0 text5 dist/default/production/PICS.X.production.obj
+__ptext6 52 0 CODE 0 text6 dist/default/production/PICS.X.production.obj
+__ptext7 406 0 CODE 0 text7 dist/default/production/PICS.X.production.obj
+__size_of_Servo_setAngle 0 0 ABS 0 - dist/default/production/PICS.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext -
+__Lclrtext 0 0 ABS 0 clrtext -
+__size_of_Servo_nextStep 0 0 ABS 0 - dist/default/production/PICS.X.production.obj
+__end_of__initialization 4A 0 CODE 0 cinit dist/default/production/PICS.X.production.obj
+Servo_setAngle@servo 33 0 BANK0 1 cstackBANK0 dist/default/production/PICS.X.production.obj
+USARTInit@baud_rate 31 0 BANK0 1 cstackBANK0 dist/default/production/PICS.X.production.obj
+__size_of_USARTWriteChar 0 0 ABS 0 - dist/default/production/PICS.X.production.obj
+__Hidloc 0 0 IDLOC 0 idloc -
+_mensaje 2F 0 BANK0 1 bssBANK0 dist/default/production/PICS.X.production.obj
+__Lidloc 0 0 IDLOC 0 idloc -
+__Hstack 0 0 STACK 2 stack -
+__Lstack 0 0 STACK 2 stack -
+__Hspace_0 2009 0 ABS 0 - -
+__Lspace_0 0 0 ABS 0 - -
+__Hspace_1 E0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Hcinit 52 0 CODE 0 cinit -
+__Lcinit 2A 0 CODE 0 cinit -
+__CFG_FOSC$HS 0 0 ABS 0 - dist/default/production/PICS.X.production.obj
+_UQFront 7C 0 COMMON 1 nvCOMMON dist/default/production/PICS.X.production.obj
+__Hspace_3 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__size_of_main 0 0 ABS 0 - dist/default/production/PICS.X.production.obj
+_initialize 372 0 CODE 0 text1 dist/default/production/PICS.X.production.obj
+__CFG_DEBUG$OFF 0 0 ABS 0 - dist/default/production/PICS.X.production.obj
+clear_ram0 4E4 0 CODE 0 clrtext dist/default/production/PICS.X.production.obj
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__pbssBANK0 20 0 BANK0 1 bssBANK0 dist/default/production/PICS.X.production.obj
+_Servo_setAngle 4BC 0 CODE 0 text4 dist/default/production/PICS.X.production.obj
+__CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/production/PICS.X.production.obj
+__CFG_BOR4V$BOR21V 0 0 ABS 0 - dist/default/production/PICS.X.production.obj
+__HbssBANK1 0 0 ABS 0 bssBANK1 -
+__LbssBANK1 0 0 ABS 0 bssBANK1 -
+__pbssBANK1 A0 0 BANK1 1 bssBANK1 dist/default/production/PICS.X.production.obj
+__end_of_USARTWriteChar 504 0 CODE 0 text5 dist/default/production/PICS.X.production.obj
+_servo_angle_x 36 0 BANK0 1 nvBANK0 dist/default/production/PICS.X.production.obj
+__size_of_interrumptions 0 0 ABS 0 - dist/default/production/PICS.X.production.obj
+__CFG_BOREN$OFF 0 0 ABS 0 - dist/default/production/PICS.X.production.obj
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+__pbssCOMMON 7D 0 COMMON 1 bssCOMMON dist/default/production/PICS.X.production.obj
+__Hend_init 2A 0 CODE 0 end_init -
+__Lend_init 24 0 CODE 0 end_init -
+__end_of_initialize 406 0 CODE 0 text1 dist/default/production/PICS.X.production.obj
+_SERVO_counterGloblal 2D 0 BANK0 1 bssBANK0 dist/default/production/PICS.X.production.obj
+__Hreset_vec 6 0 CODE 0 reset_vec -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+intlevel0 0 0 CODE 0 functab /tmp/cgtI3Nz6v.obj
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production/PICS.X.production.obj
+intlevel1 0 0 CODE 0 functab /tmp/cgtI3Nz6v.obj
+intlevel2 0 0 CODE 0 functab /tmp/cgtI3Nz6v.obj
+intlevel3 0 0 CODE 0 functab /tmp/cgtI3Nz6v.obj
+__end_of_interrumptions 1EE 0 CODE 0 text6 dist/default/production/PICS.X.production.obj
+intlevel4 0 0 CODE 0 functab /tmp/cgtI3Nz6v.obj
+__end_of_USARTInit 372 0 CODE 0 text2 dist/default/production/PICS.X.production.obj
+intlevel5 0 0 CODE 0 functab /tmp/cgtI3Nz6v.obj
+_Servo_setupSoftware 47A 0 CODE 0 text3 dist/default/production/PICS.X.production.obj
+_SERVO_pinPosition 29 0 BANK0 1 bssBANK0 dist/default/production/PICS.X.production.obj
+_servo_angle_y 37 0 BANK0 1 nvBANK0 dist/default/production/PICS.X.production.obj
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production/PICS.X.production.obj
+__CFG_CPD$OFF 0 0 ABS 0 - dist/default/production/PICS.X.production.obj
+start_initialization 2A 0 CODE 0 cinit dist/default/production/PICS.X.production.obj
+__end_of_Servo_nextStep 47A 0 CODE 0 text7 dist/default/production/PICS.X.production.obj
+__Hmaintext 0 0 ABS 0 maintext -
+__Lmaintext 0 0 ABS 0 maintext -
+__CFG_IESO$OFF 0 0 ABS 0 - dist/default/production/PICS.X.production.obj
+__pmaintext 1EE 0 CODE 0 maintext dist/default/production/PICS.X.production.obj
+__CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production/PICS.X.production.obj
+__initialization 2A 0 CODE 0 cinit dist/default/production/PICS.X.production.obj
+__CFG_CP$OFF 0 0 ABS 0 - dist/default/production/PICS.X.production.obj
+__CFG_LVP$OFF 0 0 ABS 0 - dist/default/production/PICS.X.production.obj
+__size_of_initialize 0 0 ABS 0 - dist/default/production/PICS.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect in on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+reset_vec 0 0 0 3 2
+intentry 0 4 8 27E 2
+config 0 2007 400E 2 2
+cstackCOMMON 1 70 70 E 1
+bssBANK1 1 A0 A0 40 1
+bssBANK0 1 20 20 18 1

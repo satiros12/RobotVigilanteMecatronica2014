@@ -1,0 +1,10 @@
+_Servo_setupSoftware: CODE, 573 0 33
+_main: CODE, 247 0 111
+_Servo_setAngle: CODE, 606 0 20
+__initialization: CODE, 21 0 16
+_USARTWriteChar: CODE, 634 0 8
+_initialize: CODE, 441 0 74
+_interrumptions: CODE, 41 0 206
+_USARTInit: CODE, 358 0 83
+_Servo_nextStep: CODE, 515 0 58
+Total: 609
