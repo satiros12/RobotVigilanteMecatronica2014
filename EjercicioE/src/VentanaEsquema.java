@@ -1,41 +1,49 @@
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowListener;
 
-import java.awt.event.*;
-public class VentanaEsquema implements WindowListener{
 
-	
-	public void windowActivated(WindowEvent Eventoin) {
-	
-		
+public class VentanaEsquema implements WindowListener {
+
+	@Override
+	public void windowOpened(WindowEvent e) {
+		// TODO Auto-generated method stub
+
 	}
 
-	public void windowClosed(WindowEvent Eventoin) {
-
-		
-	}
-
-	public void windowClosing(WindowEvent Eventoin) {
+	@Override
+	public void windowClosing(WindowEvent e) {
+		// TODO Auto-generated method stub
 		System.exit(0);
-		
 	}
 
-	public void windowDeactivated(WindowEvent Eventoin) {
-		
-		
+	@Override
+	public void windowClosed(WindowEvent e) {
+		// TODO Auto-generated method stub
+
 	}
 
-	public void windowDeiconified(WindowEvent Eventoin) {
-		
-		
+	@Override
+	public void windowIconified(WindowEvent e) {
+		// TODO Auto-generated method stub
+
 	}
 
-	public void windowIconified(WindowEvent Eventoin) {
-		
-		
+	@Override
+	public void windowDeiconified(WindowEvent e) {
+		// TODO Auto-generated method stub
+
 	}
 
-	public void windowOpened(WindowEvent Eventoin) {
-		
-		
+	@Override
+	public void windowActivated(WindowEvent e) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void windowDeactivated(WindowEvent e) {
+		// TODO Auto-generated method stub
+
 	}
 
 }
