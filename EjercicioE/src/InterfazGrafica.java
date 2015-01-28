@@ -359,46 +359,76 @@ public class InterfazGrafica {
 	}
 	
 	public void controlRobot(int i){
+		try {
 		switch(i){
 		case 0:
-			estadoR=(estadoR+1)%2;
-			actualizarEstado();
+			//estadoR=(estadoR+1)%2;
+			//actualizarEstado();
+			sc.sendMotorSpeed(sc.M_SIGNO_NEGATIVO_MOTOR, 0);
 			break;
 		case 1:
 			//Hacer que avance el robot hacia la derecha
+			
+				
+			
 			if(estadoR==manual){
-			velI=0;
+			velI-=1;
 			velD+=1;
 			vel=velD;
+			if(velI >= 0){
+				if(velI==0) sc.sendMotorSpeed(sc.M_SIGNO_POSITIVO_MOTOR, velI);
+				else sc.sendMotorSpeed(sc.M_SIGNO_NEGATIVO_MOTOR, velI);
+			}else
+				sc.sendMotorSpeed(sc.M_SIGNO_POSITIVO_MOTOR, velD);
 			}
 			actualizarEstado();
 			break;
 		case 2:
 			//Hacer que avance el robot hacia la derecha mas rapido
 			if(estadoR==manual){
-			velI=0;
+			velI-=2;
 			velD+=2;
 			vel=velD;
+			if(velI >= 0){
+				if(velI==0) sc.sendMotorSpeed(sc.M_SIGNO_POSITIVO_MOTOR, velI);
+				else sc.sendMotorSpeed(sc.M_SIGNO_NEGATIVO_MOTOR, velI);
+			}else
+				sc.sendMotorSpeed(sc.M_SIGNO_POSITIVO_MOTOR, velD);
 			}
 			actualizarEstado();
 			break;
 		case 3:
 			//Hacer que el robot avance hacia la izquierda
 			if(estadoR==manual){
-			velD=0;
+			velD-=1;
 			velI+=1;
 			vel=velI;
+			if(velI >= 0){
+				if(velI==0) sc.sendMotorSpeed(sc.M_SIGNO_POSITIVO_MOTOR, velI);
+				else sc.sendMotorSpeed(sc.M_SIGNO_NEGATIVO_MOTOR, velI);
+			}else
+				sc.sendMotorSpeed(sc.M_SIGNO_POSITIVO_MOTOR, velD);
 			}
 			actualizarEstado();
 			break;
 		case 4:
 			//Hacer que el robot avance hacia la izquierda mas rapido
 			if(estadoR==manual){
-			velD=0;
+			velD-=2;
 			velI+=2;
-			vel=velI;}
+			vel=velI;
+			if(velI >= 0){
+				if(velI==0) sc.sendMotorSpeed(sc.M_SIGNO_POSITIVO_MOTOR, velI);
+				else sc.sendMotorSpeed(sc.M_SIGNO_NEGATIVO_MOTOR, velI);
+			}else
+				sc.sendMotorSpeed(sc.M_SIGNO_POSITIVO_MOTOR, velD);
+			}
 			actualizarEstado();
 			break;
+		}
+		} catch (SerialPortException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 	}
 	
@@ -433,7 +463,7 @@ public class InterfazGrafica {
 			//Sumar un grado al Eje X de la camara
 			if(estadoC==manual){
 			x=x+1;
-			sc.sendServoAngleIncrement(SerialComunication.M_SERVO_X, SerialComunication.M_SIGNO_POSITIVO_SERVO, (char) 1);
+			sc.sendServoAngleIncrement(SerialComunication.M_SERVO_X, SerialComunication.M_SIGNO_NEGATIVO_SERVO, (char) 1);
 			}
 			//Mandar dicho grado al PIC
 			actualizarEstado();
@@ -442,7 +472,7 @@ public class InterfazGrafica {
 			//Restar un grado al Eje X de la camara
 			if(estadoC==manual){
 			x=x-1;
-			sc.sendServoAngleIncrement(SerialComunication.M_SERVO_X, SerialComunication.M_SIGNO_NEGATIVO_SERVO, (char) 1);
+			sc.sendServoAngleIncrement(SerialComunication.M_SERVO_X, SerialComunication.M_SIGNO_POSITIVO_SERVO, (char) 1);
 			}
 			//Mandar dicho grado al PIC
 			actualizarEstado();
